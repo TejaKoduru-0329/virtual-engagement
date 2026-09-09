@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sowmya & Krupakar Reddy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         SCENE 01 — THE SURPRISE
+    ========================================== -->
+
+    <main id="app">
+
+        <!-- =========================================
+     SCENE 01 — THE SURPRISE
+========================================= -->
+
+        <section class="scene scene-opening" id="opening">
+
+            <div class="falling-hearts" id="fallingHearts"></div>
+
+            <div class="particles"></div>
+
+
+            <div class="opening-content">
+
+                <p class="eyebrow">
+                    A LITTLE SURPRISE
+                </p>
+
+
+                <!-- =====================================
+                    MAIN MESSAGE
+                ====================================== -->
+
+                <div class="opening-message">
+
+                    <!-- ORIGINAL MESSAGE -->
+                    <h1
+                        class="opening-original-message"
+                        id="openingOriginalMessage"
+                    >
+                        Someone has<br>
+                        <span>something special</span><br>
+                        for you
+
+                        <span class="tiny-heart-line">
+                            <svg viewBox="0 0 70 20" aria-hidden="true">
+
+                                <path
+                                    d="M2 10
+                                    H18
+                                    M18 10
+                                    C18 5 22 3 25 6
+                                    C28 3 32 5 32 10
+                                    C32 14 28 17 25 19
+                                    C22 17 18 14 18 10
+                                    M32 10
+                                    H38
+                                    M38 10
+                                    C38 5 42 3 45 6
+                                    C48 3 52 5 52 10
+                                    C52 14 48 17 45 19
+                                    C42 17 38 14 38 10
+                                    M52 10
+                                    H68"
+                                />
+
+                            </svg>
+                        </span>
+
+                    </h1>
+
+
+                    <!-- CONNECTED MESSAGE -->
+                    <div
+                        class="opening-connected-message"
+                        id="openingConnectedMessage"
+                    >
+
+                        <p class="connected-eyebrow">
+                            THE MOMENT IS HERE
+                        </p>
+
+                        <h2>
+                            THE DISTANCE
+                            <span>DISAPPEARS</span>
+                        </h2>
+
+                        <p class="connected-line">
+                            For this one beautiful moment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =====================================
+                    DATE — STAYS IN SAME PLACE
+                ====================================== -->
+
+                <p class="opening-date">
+                    13 · 09 · 2026
+                </p>
+
+
+                <!-- =====================================
+                    CONNECTION / LOADER
+                ====================================== -->
+
+                <div
+                    class="opening-connection"
+                    id="openingConnection"
+                >
+
+                    <!-- WAITING -->
+                    <div
+                        class="waiting-state"
+                        id="waitingState"
+                    >
+
+                        <div class="heart-loader waiting-heart-loader">
+
+                            <svg
+                                viewBox="0 0 100 90"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    class="heart-base"
+                                    d="M50 82
+                                    C45 76 8 55 8 28
+                                    C8 10 29 4 42 17
+                                    L50 26
+                                    L58 17
+                                    C71 4 92 10 92 28
+                                    C92 55 55 76 50 82Z"
+                                />
+
+                                <path
+                                    class="heart-half heart-left"
+                                    d="M50 82
+                                    C45 76 8 55 8 28
+                                    C8 10 29 4 42 17
+                                    L50 26"
+                                />
+
+                                <path
+                                    class="heart-half heart-right waiting-half"
+                                    d="M50 26
+                                    L58 17
+                                    C71 4 92 10 92 28
+                                    C92 55 55 76 50 82"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <span>
+                            WAITING FOR YOUR OTHER HALF
+                        </span>
+
+                    </div>
+
+
+                    <!-- CONNECTED CONTROLS -->
+                    <div
+                        class="connected-controls"
+                        id="connectedControls"
+                    >
+
+                        <div class="heart-loader connected-heart-loader">
+
+                            <svg
+                                viewBox="0 0 100 90"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    class="heart-full"
+                                    d="M50 82
+                                    C45 76 8 55 8 28
+                                    C8 10 29 4 42 17
+                                    L50 26
+                                    L58 17
+                                    C71 4 92 10 92 28
+                                    C92 55 55 76 50 82Z"
+                                />
+
+                            </svg>
+
+                        </div>
+
+
+                        <button
+                            id="enterButton"
+                            class="connected-enter"
+                        >
+                            ENTER THE CELEBRATION
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- <div class="scroll-hint">
+                <span>BEGIN</span>
+                <div class="line"></div>
+            </div> -->
+
+        </section>
+
+
+        <!-- =========================================
+     SCENE 02 — CINEMATIC HEART REVEAL
+        ========================================== -->
+
+        <section class="scene scene-worlds" id="worlds">
+
+            <div class="heart-particles" aria-hidden="true">
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+            </div>
+
+            <div class="worlds-glow"></div>
+
+
+            <!-- LEFT -->
+            <!-- USA MAP -->
+            <div class="world world-usa location-map usa-map">
+
+                <div class="map-name usa-name">
+                    SOWMYA
+                </div>
+
+                <p>
+                    One heart, waiting for a beautiful moment.
+                </p>
+
+                <img src="assets/maps/usa-map.png" alt="">
+
+            </div>
+
+            <!-- MAP → HEART WIREFRAME -->
+            <svg
+                class="worlds-wireframe"
+                viewBox="0 0 1600 900"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+            >
+                <!-- LEFT: USA → HEART -->
+                <path
+                    class="wireframe-base"
+                    d="M 370 430
+                    C 430 430, 500 370, 585 300"
+                />
+
+                <path
+                    class="wireframe-progress wire-left"
+                    d="M 370 430
+                    C 430 430, 500 370, 585 300"
+                />
+
+                <!-- RIGHT: INDIA → HEART -->
+                <path
+                    class="wireframe-base"
+                    d="M 1235 520
+                    C 1170 500, 1100 390, 1015 300"
+                />
+                <path
+                    class="wireframe-progress wire-right"
+                    d="M 1235 520
+                    C 1170 500, 1100 390, 1015 300"
+                />
+
+            </svg>
+
+            <!-- HEART -->
+            <div class="cinematic-heart">
+
+                <svg
+                    class="heart-svg"
+                    viewBox="0 0 1000 900"
+                    preserveAspectRatio="xMidYMid meet"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        class="heart-path"
+                        d="
+                        M 500 790
+
+                        C 430 700, 335 630, 250 545
+                        C 135 430, 80 275, 190 160
+                        C 290 55, 450 80, 500 165
+
+                        C 550 80, 710 55, 810 160
+                        C 920 275, 865 430, 750 545
+                        C 665 630, 570 700, 500 790
+
+                        C 540 835, 610 855, 680 825
+                        C 720 805, 745 775, 770 745
+                        "
+                    />
+
+                </svg>
+
+
+                <!-- DRAWING ARROW -->
+                <div class="heart-drawing-arrow">
+                    <span></span>
+                </div>
+
+
+                <!-- NAMES -->
+                <div class="heart-names">
+
+                    <div class="heart-bride">
+                        SOWMYA
+                    </div>
+
+                    <div class="heart-groom">
+                        KRUPAKAR REDDY
+                    </div>
+
+                </div>
+
+                <!-- BUTTERFLIES -->
+                <div class="heart-butterflies" aria-hidden="true">
+                    <span>🦋</span>
+                    <span>🦋</span>
+                    <span>🦋</span>
+                    <span>🦋</span>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <!-- INDIA MAP -->
+            <div class="world world-india location-map india-map">
+
+                <div class="map-name india-name">
+                    KRUPAKAR REDDY
+                </div>
+
+                <p>
+                    One promise, waiting to be made.
+                </p>
+
+                <img src="assets/maps/india-map.png" alt="">
+
+            </div>
+
+
+            <!-- BOTTOM -->
+            <div class="worlds-bottom">
+
+                <p>
+                    TWO PLACES. ONE PROMISE.
+                </p>
+
+                <h3>
+                    And so, their story begins.
+                </h3>
+
+                <button
+                    id="continueButton"
+                    class="continue-button"
+                >
+                    CONTINUE
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+            SCENE 03 — THE RING CEREMONY
+        ========================================== -->
+
+        <section class="scene scene-ring" id="ringScene">
+
+            <!-- TOP INTRO -->
+            <div class="ring-intro">
+
+                <p class="eyebrow">THE RING CEREMONY</p>
+
+                <h2>
+                    A promise begins<br>
+                    <span>with a ring.</span>
+                </h2>
+
+                <p class="ring-instruction" id="ringInstruction">
+                    Open the ring box.
+                </p>
+
+            </div>
+
+
+            <!-- REMOTE ACTIVITY -->
+            <div class="remote-activity" id="remoteActivity">
+                <span class="activity-dot"></span>
+                <span id="remoteActivityText">
+                    Waiting for the moment...
+                </span>
+            </div>
+
+
+            <!-- CEREMONY STAGE -->
+            <div class="ring-stage">
+
+                <!-- SIDE LABEL -->
+                <div class="ceremony-role" id="ceremonyRole">
+                    YOUR MOMENT
+                </div>
+
+
+                <!-- PREMIUM HAND -->
+                <div class="hand hand-groom" id="targetHand">
+
+                    <div class="finger finger-pinky"></div>
+
+                    <div
+                        class="finger finger-ring"
+                        id="targetFinger"
+                    ></div>
+
+                    <div class="finger finger-middle"></div>
+
+                    <div class="finger finger-index"></div>
+
+                    <div class="palm"></div>
+
+                </div>
+
+
+                <!-- RING BOX -->
+                <button
+                    class="ring-box"
+                    id="ringBox"
+                    type="button"
+                    aria-label="Open the ring box"
+                >
+
+                    <span class="box-lid"></span>
+
+                    <span class="box-inner"></span>
+
+                    <span class="box-highlight"></span>
+
+                    <span class="box-label">
+                        OPEN
+                    </span>
+
+                </button>
+
+
+                <!-- DRAGGABLE RING -->
+                <div
+                    class="draggable-ring"
+                    id="draggableRing"
+                    aria-label="Engagement ring"
+                >
+                    <div class="ring-band"></div>
+                    <div class="ring-stone"></div>
+                </div>
+
+            </div>
+
+
+            <!-- STATUS -->
+            <div class="ring-status" id="ringStatus">
+
+                <span>✦</span>
+
+                OPEN THE RING BOX
+
+                <span>✦</span>
+
+            </div>
+
+
+            <!-- CHANT -->
+            <audio id="ringChant" preload="auto" loop>
+                <source src="assets/music/chants.mp3" type="audio/mpeg">
+            </audio>
+
+
+            <!-- FINAL -->
+            <div
+                class="engagement-finale"
+                id="engagementFinale"
+            >
+
+                <p class="final-eyebrow">
+                    TWO HEARTS · ONE PROMISE
+                </p>
+
+                <h2>
+                    We’re Engaged
+                </h2>
+
+                <div class="final-names">
+                    SOWMYA
+                    <span>♡</span>
+                    KRUPAKAR REDDY
+                </div>
+
+                <p class="final-message">
+                    Two lives, two places,<br>
+                    one beautiful beginning.
+                </p>
+
+                <div class="final-details">
+                    <span>16 OCTOBER 2026</span>
+
+                    <i class="detail-line"></i>
+
+                    <span>6:00-8:00 AM</span>
+
+                    <i class="detail-line"></i>
+
+                    <span>VENKATAGIRI</span>
+</div>
+
+                <div class="final-divider"></div>
+
+                <p class="final-invite">
+                    With love, joy and grateful hearts,<br>
+                    we, Sowmya &amp; Krupakar Reddy,<br>
+                    invite you to celebrate this beautiful beginning with us.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <audio id="ceremonyMusic" preload="auto">
+        <source src="assets/music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
