@@ -66,6 +66,61 @@ const params =
 const role =
     params.get("role");
 
+const hasSelectedRole =
+    role === "bride" || role === "groom";
+
+if (!hasSelectedRole) {
+    document.body.classList.add("role-not-selected");
+}
+
+/* =========================================
+   ROLE SELECTION
+========================================= */
+
+const roleGate =
+    document.getElementById("roleGate");
+
+const roleOptions =
+    document.querySelectorAll(".role-option");
+
+if (roleGate) {
+
+    // If role already exists in URL,
+    // the user has already selected their role.
+    if (role === "bride" || role === "groom") {
+
+        roleGate.classList.add("hidden");
+
+    } else {
+
+        roleOptions.forEach((button) => {
+
+            button.addEventListener("click", () => {
+
+                const selectedRole =
+                    button.dataset.role;
+
+                if (
+                    selectedRole !== "bride" &&
+                    selectedRole !== "groom"
+                ) {
+                    return;
+                }
+
+                // Keep the same public link.
+                // Internally remember the selected role.
+                const newUrl =
+                    `${window.location.pathname}?role=${selectedRole}`;
+
+                window.location.replace(newUrl);
+
+            });
+
+        });
+
+    }
+}
+
 const room =
     params.get("room") || "sowmya-krupakar";
 
